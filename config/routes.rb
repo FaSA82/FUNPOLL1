@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'users/new'
+  get 'users/create'
   root 'pages#index'
 
   get '/pages', to: 'pages#index'
