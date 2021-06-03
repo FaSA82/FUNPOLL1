@@ -5,7 +5,9 @@ class UsersController < ApplicationController
 
   def create
     
-    p create_params
+    # p create_params
+
+    debugger
 
     @user = User.new(create_params)
     if @user.save
